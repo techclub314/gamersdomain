@@ -1,20 +1,14 @@
 import React from 'react';
+import ReactRain from 'react-rain-animation';
+import "react-rain-animation/lib/style.css";
 
-
-export default class rain extends React.Component
-{
-    constructor(props)
-    {
-        super(props);
-        
-    }
-
-    render() {
-        return(
-            <div>
-
-            </div>
-
-        );
-    }
+const Rain = (props) => {
+ 
+    return (
+        <ReactRain
+          numDrops="100"
+        />
+    )
 }
+ 
+export default Rain;
